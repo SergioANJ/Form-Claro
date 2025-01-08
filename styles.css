@@ -1,0 +1,60 @@
+/* Estilo general */
+body {
+    background-color: #f8f9fa;  /* Fondo de color gris claro */
+    font-family: Arial, sans-serif;  /* Fuente sans-serif para todo el texto */
+}
+
+/* Estilo del contenedor principal */
+.container {
+    background-color: #fff;  /* Fondo blanco para el contenedor */
+    padding: 30px;  /* Espaciado interno de 30 píxeles */
+    border-radius: 8px;  /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave para darle profundidad */
+}
+
+/* Estilo para el logo */
+.logo {
+    width: 80px;  /* Ajusta el tamaño del logo */
+    height: auto;  /* Mantiene la relación de aspecto del logo */
+    display: block;  /* Hace que la imagen se comporte como un bloque */
+    margin: 0 auto;  /* Centra el logo horizontalmente */
+}
+
+
+/* Estilo de los títulos principales */
+h2 {
+    color: #FF0000;  /* Color azul para los títulos h2 */
+}
+
+/* Estilo de los subtítulos */
+h5 {
+    margin-top: 20px;  /* Margen superior de 20 píxeles */
+    color: #28a745;  /* Color verde para los subtítulos */
+}
+
+/* Estilo de las etiquetas de los formularios */
+label {
+    font-weight: bold;  /* Hacer las etiquetas en negrita */
+}
+
+/* Estilo de los campos de entrada */
+.form-control {
+    border-radius: 4px;  /* Bordes redondeados en los campos de entrada */
+}
+
+/* Estilo de los botones */
+.btn-info, .btn-primary, .btn-success {
+    width: 100%;  /* Los botones ocupan todo el ancho disponible */
+    margin-top: 10px;  /* Espaciado superior de 10 píxeles */
+}
+
+/* Efecto al pasar el mouse por encima de los botones */
+.btn-info:hover, .btn-primary:hover, .btn-success:hover {
+    opacity: 0.8;  /* Reducir la opacidad para un efecto de "hover" */
+}
+
+/* Estilo para el enlace de descarga */
+#descargar {
+    margin-top: 20px;  /* Espaciado superior de 20 píxeles */
+    text-align: center;  /* Alinear el texto al centro */
+}
