@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,7 +9,7 @@
     <link rel="stylesheet" href="styles.css"> <!-- Enlazamos el archivo CSS externo -->
 </head>
 <body>
-    <img src="logo-claro.png" alt="Logo" class="logo">
+    <img src="/logo-claro.png" alt="Logo" class="logo">
     <div class="container mt-5">
         <h2>Formulario de Carga de Datos y Generación de Excel</h2>
         
@@ -22,6 +21,14 @@
         </div>
 
         <form id="form" class="mt-4">
+
+            <!-- Sección para el nombre del archivo -->
+            <h5>Ingrese el nombre deseado para la descarga del archivo</h5>
+            <div class="form-group">
+                <label for="nombreArchivo">Nombre del Archivo Excel:</label>
+                <input type="text" class="form-control" id="nombreArchivo" name="nombreArchivo" placeholder="Ingrese el nombre del archivo">
+            </div>
+                        
             <!-- Sección de campos TCM -->
             <h5>CAMPOS TCM</h5>
             <div class="form-group">
