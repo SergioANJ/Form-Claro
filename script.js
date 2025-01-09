@@ -73,7 +73,7 @@ function formatearFecha(fechaHora) {
     const ampm = horas >= 12 ? 'p.m.' : 'a.m.'; // Determinar AM o PM
 
     // Retornar la fecha en formato YYYY-MM-DD HH:mm:ss (24H)
-    return `${anio}-${mes}-${dia} ${horas}:${minutos}:${segundos} ${ampm}`;
+    return `${anio}-${mes}-${dia} ${horas}:${minutos}:${segundos}`;
 }
 
 // Evento para cargar el archivo procesado
@@ -284,9 +284,12 @@ document.getElementById('generarExcelBtn').addEventListener('click', function (e
         const workbookFinal = XLSX.utils.book_new();
         XLSX.utils.book_append_sheet(workbookFinal, worksheet, 'Datos Generados');
 
+        const nombreArchivo = document.getElementById('nombreArchivo').value.trim();
+        const nombreFinal = nombreArchivo ? `${nombreArchivo}.xlsx` : 'archivo_generado.xlsx';  
+        
         // Guardar el archivo Excel generado
-        XLSX.writeFile(workbookFinal, 'archivo_generado.xlsx');
-        alert('¡Archivo generado exitosamente!');
+        XLSX.writeFile(workbookFinal, nombreFinal);
+        alert('¡Archivo generado exitosamente!')
 
         // Limpiar los campos del formulario después de la descarga
         setTimeout(function () {
